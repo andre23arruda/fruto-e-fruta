@@ -13,7 +13,7 @@
 
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="fonte-cursiva cor-especial" href="#">fruto & fruta</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -30,12 +30,11 @@
                   <a class="nav-link" href="#">quem somos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1">contato</a>
+                  <a class="nav-link" href="#" tabindex="-1" data-toggle="modal" data-target="#exampleModal">contato</a>
                 </li>
               </ul>
             </div>
         </nav>
-
     </header>
 
     <main>
@@ -73,12 +72,14 @@
             </div>
         </section>
 
+        <!-- Título -->
         <section id="titulo">
             <h2 class="text-center fonte-cursiva cor-especial pt-5">Receitas para economizar e ganhar saúde</h2>
             <p class="text-center text-secondary pb-5">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
         </section>
 
-        <section class="receitas container">
+        <!-- Cards receitas -->
+        <section class="receitas container-fluid bg-light">
             <div class="row justify-content-center">
                 <article class="card borda-cor-especial card-largura p-0 col-lg-4 col-12 m-3">
                     <img class="card-img-top img-card-padrao" src="src/img/receita-abacate.jpg" alt="...">
@@ -139,10 +140,41 @@
 
 
         </section>
-
-
-
     </main>
+
+    <!-- Modal Contato -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Nome</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome completo">
+                          </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Email</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@email.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Deixe seu comentário</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira aqui seu comentário"></textarea>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn background-cor-especial">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
