@@ -1,0 +1,11 @@
+
+
+.imagem-carrosel {
+	object-fit: cover;
+	object-position: 0 70%;
+	height: 400px;
+}
+
+.fonte-cursiva {
+  	font-family: 'Pacifico', cursive;
+}
