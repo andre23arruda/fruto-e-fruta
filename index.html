@@ -14,7 +14,7 @@
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="fonte-cursiva cor-especial" href="#">fruto & fruta</a>
+            <a class="navbar-brand fonte-cursiva cor-especial" href="#">fruto & fruta</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -142,17 +142,21 @@
         </section>
     </main>
 
+    <footer class="bg-secondary py-5 text-center text-light">
+        <p class="m-0">contato:<a class="text-light" href="mailto:email@frutafruto.com.br"> email@frutafruto.com.br</a></p>
+    </footer>
+
     <!-- Modal Contato -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
+            <dialog class="modal-content">
+                <header class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Entre em contato</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                </div>
-                <div class="modal-body">
+                </header>
+                <main class="modal-body">
                     <form>
                         <div class="form-group">
                             <label for="formGroupExampleInput">Nome</label>
@@ -167,12 +171,12 @@
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira aqui seu comentário"></textarea>
                         </div>
                       </form>
-                </div>
-                <div class="modal-footer">
+                </main>
+                <footer class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn background-cor-especial">Enviar</button>
-                </div>
-            </div>
+                </footer>
+            </dialog>
         </div>
     </div>
 
@@ -180,7 +184,6 @@
 
 
 
-    <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
 
 
     <script src="./assets/js/jquery.min.js"></script>
